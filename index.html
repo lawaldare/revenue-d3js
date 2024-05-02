@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Revenue</title>
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="chart-area"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: 'AIzaSyA3zHGizqnpRLhxtBT8fSJyQTZmCGFBWIg',
+        authDomain: 'd3-firebase-ea6f2.firebaseapp.com',
+        projectId: 'd3-firebase-ea6f2',
+        storageBucket: 'd3-firebase-ea6f2.appspot.com',
+        messagingSenderId: '479646783391',
+        appId: '1:479646783391:web:18cdea3be8b6c023f18faa',
+        measurementId: 'G-48BED9RQQ2',
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true, merge: true });
+    </script>
+
+    <!-- External JS libraries -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

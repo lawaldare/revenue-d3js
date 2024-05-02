@@ -1,0 +1,14 @@
+#chart-area {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+#logo {
+	height:50px;
+}
+
+.navbar-brand {
+	height: 60px;
+	padding: 5px 0px;
+}
